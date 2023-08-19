@@ -1,0 +1,12 @@
+input::placeholder {
+    font-weight: lighter;
+    color:#edede9;
+    font-style: italic;
+
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 900px;
+}
