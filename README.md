@@ -11,46 +11,15 @@ Front end is used to provide the payload expected.
 1. Clone the project:
 
 ```sh
-git clone 
+git clone https://github.com/anujarathi29/certificate-validation-zkp-frontend.git
 ```
 
 2. Run the front-end
 
 ```sh
 cd front-end
+npm install
 npm start
 ```
 
 If the webpack is compiled successfully, go to [http://localhost:3000] and access the frontend.
-
-# API
-
-## `/prover`
-#### Expected payload
-    {
-        "recipient_id": Number,
-        "recipient_name": String,
-        "email": String,
-        "phoneNumber": String,
-        "grade": String,
-        "issuer_id": Number,
-        "issuer_name": String,
-    }
-#### Expected response
-    {
-	    "proof": {
-            <generated proof>
-        }
-    }
-
-## `/verifier`
-#### Expected payload
-    {
-        "proof": String,
-    }
-#### Expected response
-    {
-	    "Status": {
-            <Verification Status>
-        }
-    }
